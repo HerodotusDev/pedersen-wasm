@@ -1,0 +1,25 @@
+[package]
+name = "pedersen-wasm"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+lto = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.81"
+ark-ec = "0.3.0"
+ark-ff = "0.3.0"
+ark-serialize = "0.3.0"
+ark-std = { version = "0.3.0", features = ["std"] }
+proof-essentials = { git = "https://github.com/geometryresearch/proof-toolbox.git" }
+starknet-curve = { git = "https://github.com/geometryresearch/proof-toolbox.git" }
+lazy_static = "1.4.0"
+starknet = "0.2.0"
+hex = "0.4.3"
+leftpad = "0.2.0"

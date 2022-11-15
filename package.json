@@ -1,0 +1,17 @@
+{
+  "name": "pedersen-wasm",
+  "author": "Herodotus Dev Ltd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "@types/bn.js": "^5.1.1",
+    "bigint-buffer": "^1.1.5",
+    "bn.js": "^5.2.1"
+  }
+}
