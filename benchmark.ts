@@ -52,7 +52,7 @@ function main() {
       hashFn: (x: string, y: string) =>
         starknet_pedersen(toBufferLE(BigInt(x), 32), toBufferLE(BigInt(y), 32)),
       type: HashType.PEDERSEN,
-      name: "Geometry (Rust/WASM) v1",
+      name: "Starknet-rs (Rust/WASM)",
     },
     {
       hashFn: (x: string, y: string) =>
@@ -66,7 +66,7 @@ function main() {
     {
       hashFn: (x: string, y: string) => pedersen(x, y),
       type: HashType.PEDERSEN,
-      name: "Geometry (Rust/WASM) v2",
+      name: "Geometry (Rust/WASM)   ",
     },
   ];
 
